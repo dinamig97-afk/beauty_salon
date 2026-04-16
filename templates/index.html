@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css">
+<script defer src="/static/script.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Luxury Beauty ✨</h1>
+
+    <div class="box">
+        <h2>Запись</h2>
+
+        <form action="/book" method="POST">
+            <input name="name" placeholder="Имя" required>
+            <input name="phone" placeholder="Телефон" required>
+
+            <select name="service">
+                <option>Маникюр</option>
+                <option>Педикюр</option>
+                <option>Ресницы</option>
+            </select>
+
+            <input type="date" id="date" name="date" required>
+
+            <select id="time" name="time"></select>
+
+            <button>Записаться</button>
+        </form>
+    </div>
+
+    <a href="/login">Вход</a>
+</div>
+
+</body>
+</html>
